@@ -408,9 +408,9 @@ const styles = `
   }
 
   .product-card {
-    background: #fff7e8;
+    background: var(--color-white);
     padding: 40px;
-    border-top: 4px solid var(--color-gold);
+    border-top: 4px solid transparent;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -424,6 +424,7 @@ const styles = `
   .product-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
+    border-top-color: var(--color-gold);
   }
 
   .card-category {
@@ -467,6 +468,12 @@ const styles = `
   }
   .btn-text:hover { gap: 12px; color: var(--color-gold); }
   .icon-arrow { width: 16px; height: 16px; }
+
+  /* Featured Card Highlight */
+  .featured-card {
+    background: linear-gradient(145deg, #ffffff 0%, #fffbf2 100%);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+  }
 
   /* 7. CONTACT SECTION (info only, no form) */
   .contact-section { 
@@ -740,12 +747,13 @@ const SplashScreen = () => (
 
 const ProductCard = ({ title, category, content, features, onOpen }) => (
   <div className="product-card">
+
     <div className="card-content">
       <span className="card-category">{category}</span>
       <h3 className="card-title">{title}</h3>
       <div className="card-divider"></div>
       <p className="card-text">{content}</p>
-      
+
       {features && (
         <ul className="card-features">
           {features.map((item, i) => (
@@ -763,6 +771,7 @@ const ProductCard = ({ title, category, content, features, onOpen }) => (
     </div>
   </div>
 );
+
 
 const ProductModal = ({ product, onClose }) => {
   if (!product) return null;
