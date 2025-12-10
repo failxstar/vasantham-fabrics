@@ -1116,59 +1116,7 @@ const App = () => {
             </div>
           </section>
 
-          {/* --- Contact Section (Info only) --- */}
-          <section id="contact" className="contact-section">
-            <div className="container contact-grid-layout">
-              <div className="contact-info">
-                <span className="section-label">Get In Touch</span>
-                <h2 className="section-heading">Let's Discuss Your Needs</h2>
-                <p className="section-subheading" style={{ marginBottom: "40px" }}>
-                  Visit us at our Dubai showroom or send us a message to request fabric swatches and
-                  quotes.
-                </p>
-
-                <div className="contact-detail-row">
-                  <div className="contact-icon-box">
-                    <MapPin size={24} />
-                  </div>
-                  <div>
-                    <h4 style={{ marginBottom: "5px", color: "var(--color-primary)" }}>
-                      Showroom Address
-                    </h4>
-                    <p style={{ color: "var(--color-text-light)" }}>
-                      Shop No. 4, Al Qattan Building
-                      <br />
-                      Bur Dubai Textile Market, Dubai, UAE
-                    </p>
-                  </div>
-                </div>
-
-                <div className="contact-detail-row">
-                  <div className="contact-icon-box">
-                    <Phone size={24} />
-                  </div>
-                  <div>
-                    <h4 style={{ marginBottom: "5px", color: "var(--color-primary)" }}>Call Us</h4>
-                    <p style={{ color: "var(--color-text-light)" }}>
-                      +971 50 959 8705
-                      <br />
-                      +971 435 39584
-                    </p>
-                  </div>
-                </div>
-
-                <div className="contact-detail-row">
-                  <div className="contact-icon-box">
-                    <Mail size={24} />
-                  </div>
-                  <div>
-                    <h4 style={{ marginBottom: "5px", color: "var(--color-primary)" }}>Email Us</h4>
-                    <p style={{ color: "var(--color-text-light)" }}>sales1@vpf.ae</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+        
 
           {/* --- Footer --- */}
           <footer className="footer-dark">
